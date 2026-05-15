@@ -45,6 +45,8 @@ tasks:
 
   # suggested dependencies
   # https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+  install-deps: brew install openssl readline sqlite3 xz zlib tcl-tk
+  install-py311: asdf install python 3.11.7
 
   asdf-install-python:
     desc: install as https://github.com/asdf-community/asdf-python

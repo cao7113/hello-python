@@ -12,7 +12,7 @@ app = FastAPI()
 logging.basicConfig(level=logging.INFO)
 
 @app.get("/")
-def read_root():
+async def root():
     logging.info('hello world')
     return {"Hello": "World"}
 
